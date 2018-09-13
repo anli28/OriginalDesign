@@ -10,11 +10,23 @@ void setup() {
 }
 
 void draw() {
+  load();
+  end();
+}
+
+void end(){
+  if (a>2000) {
+      background(random(255), random(255), random(255));
+      textSize(c);
+      text("HEHE", 100, 100);
+    }
+}
+
+void load(){
   fill(255, 255, 255);
   rect(190, 290, 400, 40);
   fill(127, 247, 0);
   rect(190, 290, 1+x, 40);
-  
   if (x >400) {
     textSize(50);
     textAlign(CENTER);
@@ -23,17 +35,11 @@ void draw() {
     rotate(a);
     textSize(b);
     textAlign(CENTER);
-    text("CONGRATULATION", 250, 250);
+    text("CONGRATULATION", 250, 250);a=a+5;
     a=a+5;
     b=b+1;
     c=c+0.1;
-    if (a>2000) {
-      background(random(255), random(255), random(255));
-      textSize(c);
-      text("HEHE", 100, 100);
-    }
-    
-  }else{
+    }else{
     x =x+1;
   }
 }
