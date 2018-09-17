@@ -40,6 +40,6 @@ void load(){
     b=b+1;
     c=c+0.1;
     }else{
-    x =x+1;
+    x =x+0.5;
   }
 }
